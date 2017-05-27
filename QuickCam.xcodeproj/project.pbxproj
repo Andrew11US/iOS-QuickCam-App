@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		90B82C7B1ED8BB3B000E1882 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B82C7A1ED8BB3B000E1882 /* AppDelegate.swift */; };
-		90B82C7D1ED8BB3B000E1882 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B82C7C1ED8BB3B000E1882 /* ViewController.swift */; };
 		90B82C801ED8BB3B000E1882 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90B82C7E1ED8BB3B000E1882 /* Main.storyboard */; };
 		90B82C821ED8BB3B000E1882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90B82C811ED8BB3B000E1882 /* Assets.xcassets */; };
 		90B82C851ED8BB3B000E1882 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90B82C831ED8BB3B000E1882 /* LaunchScreen.storyboard */; };
+		90B82C8F1ED8BD1C000E1882 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B82C8C1ED8BD1C000E1882 /* CameraViewController.swift */; };
+		90B82C901ED8BD1C000E1882 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B82C8D1ED8BD1C000E1882 /* PhotoCaptureDelegate.swift */; };
+		90B82C911ED8BD1C000E1882 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B82C8E1ED8BD1C000E1882 /* PreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		90B82C771ED8BB3B000E1882 /* QuickCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90B82C7A1ED8BB3B000E1882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90B82C7C1ED8BB3B000E1882 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90B82C7F1ED8BB3B000E1882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90B82C811ED8BB3B000E1882 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90B82C841ED8BB3B000E1882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90B82C861ED8BB3B000E1882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90B82C8C1ED8BD1C000E1882 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		90B82C8D1ED8BD1C000E1882 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+		90B82C8E1ED8BD1C000E1882 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				90B82C7A1ED8BB3B000E1882 /* AppDelegate.swift */,
-				90B82C7C1ED8BB3B000E1882 /* ViewController.swift */,
+				90B82C8C1ED8BD1C000E1882 /* CameraViewController.swift */,
+				90B82C8D1ED8BD1C000E1882 /* PhotoCaptureDelegate.swift */,
+				90B82C8E1ED8BD1C000E1882 /* PreviewView.swift */,
 				90B82C7E1ED8BB3B000E1882 /* Main.storyboard */,
 				90B82C811ED8BB3B000E1882 /* Assets.xcassets */,
 				90B82C831ED8BB3B000E1882 /* LaunchScreen.storyboard */,
@@ -137,8 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90B82C7D1ED8BB3B000E1882 /* ViewController.swift in Sources */,
+				90B82C911ED8BD1C000E1882 /* PreviewView.swift in Sources */,
 				90B82C7B1ED8BB3B000E1882 /* AppDelegate.swift in Sources */,
+				90B82C901ED8BD1C000E1882 /* PhotoCaptureDelegate.swift in Sources */,
+				90B82C8F1ED8BD1C000E1882 /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
