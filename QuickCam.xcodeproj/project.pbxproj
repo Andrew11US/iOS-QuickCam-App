@@ -310,6 +310,7 @@
 				90B82C8B1ED8BB3B000E1882 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

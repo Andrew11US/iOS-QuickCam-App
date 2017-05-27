@@ -30,15 +30,8 @@
                                     <outletCollection property="gestureRecognizers" destination="OJj-Cr-irC" appends="YES" id="BA9-Im-1vR"/>
                                 </connections>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ak2-Ip-yPm">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZeM-op-Mm3">
-                                <rect key="frame" x="137" y="40" width="101" height="29"/>
+                                <rect key="frame" x="0.0" y="569" width="375" height="29"/>
                                 <segments>
                                     <segment title="Photo"/>
                                     <segment title="Video"/>
@@ -48,23 +41,37 @@
                                     <action selector="toggleCaptureMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="yFY-S0-RVS"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U9-KM-Ihu">
-                                <rect key="frame" x="307" y="40" width="32" height="30"/>
-                                <state key="normal" title="Cam"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U9-KM-Ihu">
+                                <rect key="frame" x="309" y="607" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="39s-Px-Moo"/>
+                                    <constraint firstAttribute="height" constant="50" id="9U3-ip-tSu"/>
+                                </constraints>
+                                <state key="normal" image="changeCamera">
+                                    <color key="titleColor" red="1" green="0.82053902580000004" blue="0.1569657065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="changeCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w2V-y8-Psv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evI-Q6-R6B">
-                                <rect key="frame" x="36" y="40" width="41" height="30"/>
-                                <state key="normal" title="Photo"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evI-Q6-R6B">
+                                <rect key="frame" x="162.5" y="607" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="fQa-E6-osZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="nuf-6V-D29"/>
+                                </constraints>
+                                <state key="normal" title="Photo" image="photoBtn"/>
                                 <connections>
                                     <action selector="capturePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1pf-qJ-AKw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdZ-Uf-uDJ">
-                                <rect key="frame" x="36" y="80" width="30" height="30"/>
-                                <state key="normal" title="Rec"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdZ-Uf-uDJ">
+                                <rect key="frame" x="36" y="607" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ujk-lq-KOf"/>
+                                    <constraint firstAttribute="width" constant="50" id="xzU-TE-omR"/>
+                                </constraints>
+                                <state key="normal" title="Rec" image="recBtn"/>
                                 <connections>
                                     <action selector="toggleMovieRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q0w-2J-X6X"/>
                                 </connections>
@@ -72,18 +79,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZeM-op-Mm3" secondAttribute="trailing" id="0Kf-Vm-6uB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="evI-Q6-R6B" secondAttribute="bottom" constant="10" id="1yn-0o-eAn"/>
                             <constraint firstItem="4pM-un-f55" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="B8V-5d-mPP"/>
-                            <constraint firstItem="UdZ-Uf-uDJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="Lgx-UC-hTN"/>
-                            <constraint firstItem="4U9-KM-Ihu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Shz-Fl-cDz"/>
+                            <constraint firstItem="evI-Q6-R6B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J2c-cJ-3Je"/>
+                            <constraint firstItem="4U9-KM-Ihu" firstAttribute="centerY" secondItem="evI-Q6-R6B" secondAttribute="centerY" id="OE7-wv-HFf"/>
                             <constraint firstItem="4pM-un-f55" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ULc-e9-G1a"/>
-                            <constraint firstItem="evI-Q6-R6B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="YLc-8q-vCT"/>
                             <constraint firstItem="4pM-un-f55" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="baY-UD-2FO"/>
+                            <constraint firstItem="UdZ-Uf-uDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="dqI-ZQ-cUl"/>
+                            <constraint firstItem="ZeM-op-Mm3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e0B-al-8fp"/>
                             <constraint firstItem="ZeM-op-Mm3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g97-Hj-IBf"/>
                             <constraint firstItem="4pM-un-f55" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g9F-NH-kmz"/>
-                            <constraint firstItem="ZeM-op-Mm3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="oFX-fb-YT0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4U9-KM-Ihu" secondAttribute="trailing" constant="20" id="p3X-bQ-AVH"/>
-                            <constraint firstItem="evI-Q6-R6B" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="vuL-R0-Rvo"/>
-                            <constraint firstItem="UdZ-Uf-uDJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="xGl-ra-MMr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4U9-KM-Ihu" secondAttribute="trailing" id="p3X-bQ-AVH"/>
+                            <constraint firstItem="evI-Q6-R6B" firstAttribute="centerY" secondItem="UdZ-Uf-uDJ" secondAttribute="centerY" id="qMv-Mr-qXC"/>
+                            <constraint firstItem="evI-Q6-R6B" firstAttribute="top" secondItem="ZeM-op-Mm3" secondAttribute="bottom" constant="10" id="v6o-BA-sEo"/>
                         </constraints>
                     </view>
                     <connections>
@@ -103,4 +112,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="changeCamera" width="150" height="150"/>
+        <image name="photoBtn" width="150" height="150"/>
+        <image name="recBtn" width="150" height="150"/>
+    </resources>
 </document>
