@@ -41,7 +41,7 @@
                                     <action selector="toggleCaptureMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="yFY-S0-RVS"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U9-KM-Ihu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U9-KM-Ihu" customClass="CustomButton" customModule="QuickCam" customModuleProvider="target">
                                 <rect key="frame" x="309" y="607" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="39s-Px-Moo"/>
@@ -54,7 +54,7 @@
                                     <action selector="changeCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w2V-y8-Psv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evI-Q6-R6B">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evI-Q6-R6B" customClass="CustomButton" customModule="QuickCam" customModuleProvider="target">
                                 <rect key="frame" x="162.5" y="607" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="fQa-E6-osZ"/>
@@ -65,7 +65,7 @@
                                     <action selector="capturePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1pf-qJ-AKw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdZ-Uf-uDJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdZ-Uf-uDJ" customClass="CustomButton" customModule="QuickCam" customModuleProvider="target">
                                 <rect key="frame" x="36" y="607" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ujk-lq-KOf"/>
