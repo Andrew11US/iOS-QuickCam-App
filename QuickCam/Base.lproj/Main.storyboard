@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pM-un-f55" customClass="PreviewView" customModule="QuickCam" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -30,21 +30,43 @@
                                 </connections>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IsO-Gu-4gj">
-                                <rect key="frame" x="8" y="571" width="359" height="88"/>
+                                <rect key="frame" x="8" y="28" width="100" height="378"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZeM-op-Mm3">
-                                        <rect key="frame" x="0.0" y="0.0" width="359" height="29"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Wbg-w3-kV2"/>
+                                            <constraint firstAttribute="width" constant="100" id="zm5-8Y-nLx"/>
+                                        </constraints>
                                         <segments>
                                             <segment title="Photo"/>
                                             <segment title="Video"/>
                                         </segments>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Wbg-w3-kV2"/>
+                                                <exclude reference="zm5-8Y-nLx"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Wbg-w3-kV2"/>
+                                                <include reference="zm5-8Y-nLx"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="Wbg-w3-kV2"/>
+                                                <include reference="zm5-8Y-nLx"/>
+                                            </mask>
+                                        </variation>
                                         <connections>
                                             <action selector="toggleCaptureMode:" destination="BYZ-38-t0r" eventType="valueChanged" id="yFY-S0-RVS"/>
                                         </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="G9B-2F-dDb">
-                                        <rect key="frame" x="0.0" y="38" width="359" height="50"/>
+                                        <rect key="frame" x="25" y="50" width="50" height="328"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdZ-Uf-uDJ" customClass="CustomButton" customModule="QuickCam" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -58,7 +80,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evI-Q6-R6B" customClass="CustomButton" customModule="QuickCam" customModuleProvider="target">
-                                                <rect key="frame" x="154.5" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="139" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="fQa-E6-osZ"/>
                                                     <constraint firstAttribute="height" constant="50" id="nuf-6V-D29"/>
@@ -69,7 +91,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4U9-KM-Ihu" customClass="CustomButton" customModule="QuickCam" customModuleProvider="target">
-                                                <rect key="frame" x="309" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="278" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="39s-Px-Moo"/>
                                                     <constraint firstAttribute="height" constant="50" id="9U3-ip-tSu"/>
@@ -82,13 +104,54 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Zeh-4h-bwa"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Zeh-4h-bwa"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="vertical">
+                                            <mask key="constraints">
+                                                <include reference="Zeh-4h-bwa"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular" axis="vertical">
+                                            <mask key="constraints">
+                                                <include reference="Zeh-4h-bwa"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3ar-AI-7Bw"/>
+                                    <constraint firstItem="G9B-2F-dDb" firstAttribute="centerX" secondItem="ZeM-op-Mm3" secondAttribute="centerX" id="DWO-WV-XYF"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3ar-AI-7Bw"/>
+                                        <exclude reference="DWO-WV-XYF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" alignment="center" spacing="20">
+                                    <mask key="constraints">
+                                        <exclude reference="3ar-AI-7Bw"/>
+                                        <include reference="DWO-WV-XYF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular" alignment="center" spacing="20">
+                                    <mask key="constraints">
+                                        <exclude reference="3ar-AI-7Bw"/>
+                                        <include reference="DWO-WV-XYF"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="4pM-un-f55" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="B8V-5d-mPP"/>
+                            <constraint firstItem="IsO-Gu-4gj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="I2U-sG-f8B"/>
                             <constraint firstItem="4pM-un-f55" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ULc-e9-G1a"/>
                             <constraint firstItem="IsO-Gu-4gj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Y8F-nN-wob"/>
                             <constraint firstItem="4pM-un-f55" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="baY-UD-2FO"/>
@@ -96,6 +159,24 @@
                             <constraint firstItem="4pM-un-f55" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g9F-NH-kmz"/>
                             <constraint firstAttribute="trailing" secondItem="IsO-Gu-4gj" secondAttribute="trailing" constant="8" id="xF4-MN-5qT"/>
                         </constraints>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Y8F-nN-wob"/>
+                                <exclude reference="xF4-MN-5qT"/>
+                                <include reference="cTE-sc-lGP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Y8F-nN-wob"/>
+                                <exclude reference="xF4-MN-5qT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="I2U-sG-f8B"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="cameraButton" destination="4U9-KM-Ihu" id="HiQ-5s-HN7"/>
